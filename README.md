@@ -3,7 +3,7 @@ How to use the downloaded files
 1) Run "npm install" in the extracted folder
 2) Run "npm start" to view the project
 
-Excersie:
+Exercise:
 
 1) Create an input field (in App component) with a change listener which outputs the length of the entered text below it (e.g. in a paragraph).
 

@@ -17,4 +17,6 @@ Exercise:
 
 6) When you click a CharComponent, it should be removed from the entered text.
 
+![Screenshot](images/Screen Shot 2018-12-31 at 11.45.16 PM.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).

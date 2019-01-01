@@ -4,10 +4,9 @@ import './CharComponent.css';
 
 const CharComponent = (props) => {
 
-
     return (
-        <div className="CharComponent">
-            <h1>test</h1>
+        <div onClick={props.click} className="CharComponent">
+            <h2> {props.displayChar} </h2>
         </div>
     )
 };

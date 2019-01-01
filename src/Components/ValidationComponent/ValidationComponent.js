@@ -9,11 +9,11 @@ const ValidationComponent = (props) => {
 
     if (props.textLength >= 5) {
         displayText = (
-            <p>Text Long Enough</p>
+            <h4>Text is Long Enough. Click letters to delete.</h4>
         )
     } else {
         displayText = (
-            <p>Text too short</p>
+            <h4>Text is too short, please add more.</h4>
         )
     }
 

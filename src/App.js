@@ -23,12 +23,12 @@ class App extends Component {
     this.setState({ inputLength: inputLengthCopy, characters: inputCharCopy[0] })
   }
 
-    //deletes person from array
-    deleteLetterHandler = (letterIndex) => {
-      const characters = [...this.state.characters];
-      characters.splice(letterIndex, 1);
-      this.setState({ characters: characters });
-    }
+  //deletes person from array
+  deleteLetterHandler = (letterIndex) => {
+    const characters = [...this.state.characters];
+    characters.splice(letterIndex, 1);
+    this.setState({ characters: characters });
+  }
 
   render() {
     let char = null;
@@ -36,7 +36,7 @@ class App extends Component {
     if (this.state.characters && this.state.inputLength >= 5) {
       char = (
         <section>
-          {this.state.characters.map((characters, index) => {                        
+          {this.state.characters.map((characters, index) => {
             return <CharComponent
               click={() => this.deleteLetterHandler(index)}
               displayChar={characters}
@@ -48,11 +48,15 @@ class App extends Component {
     }
 
     return (
-      <section>
-        <input type="text" onChange={this.updateHandler.bind()} />
-        <p>{this.state.inputLength}</p>
-        <ValidationComp textLength={this.state.inputLength} />
-        {char}
+      <section className="container">
+        <section className="center">
+          <input type="text" onChange={this.updateHandler.bind()} placeholder="Say Hello"/>
+          <section className="App">
+            <ValidationComp textLength={this.state.inputLength} />
+            <p>Character total: {this.state.inputLength}</p>
+            {char}
+          </section>
+        </section>
       </section>
     );
   }

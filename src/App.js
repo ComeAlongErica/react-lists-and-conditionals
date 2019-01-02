@@ -35,7 +35,7 @@ class App extends Component {
 
     if (this.state.characters && this.state.inputLength >= 5) {
       char = (
-        <section>
+        <section id="CharComponent">
           {this.state.characters.map((characters, index) => {
             return <CharComponent
               click={() => this.deleteLetterHandler(index)}

@@ -6,7 +6,7 @@ const CharComponent = (props) => {
 
     return (
         <div onClick={props.click} className="CharComponent">
-            <h2> {props.displayChar} </h2>
+            <h2>{props.displayChar}</h2>
         </div>
     )
 };

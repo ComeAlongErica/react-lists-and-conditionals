@@ -1,5 +1,11 @@
+#CharComponent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 60vw;
+  }
+
 .CharComponent {
-    display: inline-block;
     width: 50px;
     min-height: 50px;
     margin: 5px;

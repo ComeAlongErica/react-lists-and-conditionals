@@ -6,7 +6,7 @@ import CharComponent from './Components/CharComponent/CharComponent'
 class App extends Component {
 
   state = {
-    inputLength: 0,
+    inputLength: [0],
     characters: [],
   }
 
